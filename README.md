@@ -21,8 +21,7 @@ A scoring model combines detection performance (40%), generalisation (25%), robu
 | M4 | EfficientNet-B4 (ImageNet) | General vision baseline |
 | M5 | EfficientNet-B0 (ImageNet) | General vision baseline |
 
-## Repository Structure
-
+```
 ├── Preprocessing/
 │   └── preprocess_dataset.py          # Face detection and cropping using RetinaFace
 │
@@ -60,6 +59,7 @@ A scoring model combines detection performance (40%), generalisation (25%), robu
     ├── compute_metrics_final.py       # Final scoring and ranking
     ├── labels.csv                     # Dataset label file
     └── final_ranking.csv              # Final weighted scores and ranking
+```
 
 ## Requirements
 
