@@ -1,15 +1,15 @@
 # Deepfake Detection Benchmarking Framework
 
-A repeatable benchmarking framework for evaluating and ranking deepfake detection modules, developed as part of a final year dissertation at Coventry University.
+This is my repeatable benchmarking framework for evaluating and ranking deepfake detection modules, developed as part of a final year dissertation at Coventry University.
 
 ## Overview
 
 This framework evaluates five open-source deepfake detection modules under a single consistent protocol across three conditions:
-- **Clean performance** — baseline evaluation on unmodified images
-- **Robustness** — evaluation under 8 image degradation types (compression, blur, noise, resize)
-- **Generalisation** — evaluation across two different fake-generation pipelines
+- **Clean performance**: baseline evaluation on unmodified images
+- **Robustness**: evaluation under 8 image degradation types (compression, blur, noise, resize)
+- **Generalisation**: evaluation across two different fake-generation pipelines
 
-A weighted scoring model combines detection performance (40%), generalisation (25%), robustness (25%), and efficiency (10%) to produce a final score out of 10 for each module.
+A scoring model combines detection performance (40%), generalisation (25%), robustness (25%), and efficiency (10%) to produce a final score out of 10 for each module.
 
 ## Detectors Evaluated
 
