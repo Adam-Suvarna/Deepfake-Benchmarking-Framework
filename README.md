@@ -22,18 +22,44 @@ A scoring model combines detection performance (40%), generalisation (25%), robu
 | M5 | EfficientNet-B0 (ImageNet) | General vision baseline |
 
 ## Repository Structure
-├── preprocess_dataset.py          # Face detection and cropping using RetinaFace
-├── evaluate_mesonet.py            # Clean evaluation — MesoNet
-├── evaluate_xceptionnet.py        # Clean evaluation — XceptionNet
-├── evaluate_sbi.py                # Clean evaluation — SelfBlendedImages
-├── evaluate_efficientnet_b4.py    # Clean evaluation — EfficientNet-B4
-├── evaluate_efficientnet_b0.py    # Clean evaluation — EfficientNet-B0
-├── robustness_mesonet.py          # Robustness evaluation — MesoNet
-├── robustness_xceptionnet.py      # Robustness evaluation — XceptionNet
-├── robustness_sbi.py              # Robustness evaluation — SelfBlendedImages
-├── robustness_efficientnet_b4.py  # Robustness evaluation — EfficientNet-B4
-├── robustness_efficientnet_b0.py  # Robustness evaluation — EfficientNet-B0
-└── compute_metrics_final.py       # Final scoring and ranking
+
+├── Preprocessing/
+│   └── preprocess_dataset.py          # Face detection and cropping using RetinaFace
+│
+├── M1_MesoNet/
+│   ├── evaluate_mesonet.py            # Clean evaluation — MesoNet
+│   ├── robustness_mesonet.py          # Robustness evaluation — MesoNet
+│   ├── results_mesonet.csv            # Clean condition results
+│   └── results_mesonet_robustness.csv # Robustness condition results
+│
+├── M2_XceptionNet/
+│   ├── evaluate_xceptionnet.py        # Clean evaluation — XceptionNet
+│   ├── robustness_xceptionnet.py      # Robustness evaluation — XceptionNet
+│   ├── results_xceptionnet.csv        # Clean condition results
+│   └── results_xceptionnet_robustness.csv # Robustness condition results
+│
+├── M3_SBI/
+│   ├── evaluate_sbi.py                # Clean evaluation — SelfBlendedImages
+│   ├── robustness_sbi.py              # Robustness evaluation — SelfBlendedImages
+│   ├── results_sbi.csv                # Clean condition results
+│   └── results_sbi_robustness.csv     # Robustness condition results
+│
+├── M4_EfficientNet_B4/
+│   ├── evaluate_efficientnet_b4.py    # Clean evaluation — EfficientNet-B4
+│   ├── robustness_efficientnet_b4.py  # Robustness evaluation — EfficientNet-B4
+│   ├── results_efficientnet_b4.csv    # Clean condition results
+│   └── results_efficientnet_b4_robustness.csv # Robustness condition results
+│
+├── M5_EfficientNet_B0/
+│   ├── evaluate_efficientnet_b0.py    # Clean evaluation — EfficientNet-B0
+│   ├── robustness_efficientnet_b0.py  # Robustness evaluation — EfficientNet-B0
+│   ├── results_efficientnet_b0.csv    # Clean condition results
+│   └── results_efficientnet_b0_robustness.csv # Robustness condition results
+│
+└── Final_Results/
+    ├── compute_metrics_final.py       # Final scoring and ranking
+    ├── labels.csv                     # Dataset label file
+    └── final_ranking.csv              # Final weighted scores and ranking
 
 ## Requirements
 
