@@ -85,4 +85,4 @@ A scoring model combines detection performance (40%), generalisation (25%), robu
 
 ## Academic Use Only
 
-This project is strictly for academic and research purposes. All tools and models used are open-source. The evaluation dataset is not publicly released as it contains photographs of the researcher.
+This project is strictly for academic and research purposes. All tools and models used are open-source. The evaluation dataset is not publicly released as it contains photographs of myself, the researcher.
