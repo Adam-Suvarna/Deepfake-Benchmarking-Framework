@@ -63,7 +63,7 @@ A scoring model combines detection performance (40%), generalisation (25%), robu
 
 ## Requirements
 
-- Python 3.9 or 3.10
+- Python 3.9
 - PyTorch
 - TensorFlow / Keras
 - timm
